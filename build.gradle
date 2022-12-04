@@ -1,0 +1,41 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+description = """advent-of-code-2022"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+  jcenter()
+  mavenCentral()
+  maven {
+    url "http://4thline.org/m2/"
+  }
+}
+
+
+dependencies {
+
+  implementation 'commons-io:commons-io:2.6'
+  implementation 'org.apache.commons:commons-lang3:3.8.1'
+  implementation 'org.neo4j.driver:neo4j-java-driver:1.7.3'
+  implementation 'com.opencsv:opencsv:4.6'
+  implementation 'joda-time:joda-time:2.10.3'
+  implementation 'net.jthink:jaudiotagger:2.2.6-PATHRIK'
+  implementation 'org.dom4j:dom4j:2.1.1'
+// https://mvnrepository.com/artifact/org.jsoup/jsoup
+  implementation group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
+  
+}
